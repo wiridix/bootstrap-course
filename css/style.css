@@ -1,0 +1,21 @@
+.cajas div{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajas div>p{
+    margin-bottom: 20px;
+}
+
+.cajas button{
+    width: 100%;
+    align-self: end;
+}
+
+footer .container div> a,a:hover, a:visited{
+    text-decoration: none;
+    color:white;
+    align-self: center;
+    
+}
