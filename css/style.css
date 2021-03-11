@@ -17,5 +17,8 @@ footer .container div> a,a:hover, a:visited{
     text-decoration: none;
     color:white;
     align-self: center;
-    
+}
+
+.titulo{
+    margin-top: 40px;
 }
