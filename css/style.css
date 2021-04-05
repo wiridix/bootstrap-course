@@ -7,3 +7,7 @@ footer .container div> a,a:hover, a:visited{
 .titulo{
     margin-top: 40px;
 }
+
+.t-w .card > .card-body > .btn{
+    color: white;
+}

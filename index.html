@@ -31,34 +31,53 @@
                 <li class="breadcrumb-item active" arial-current="page">Home</li>
             </ol>
         </nav>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#titleOne" role="button" aria-expanded="false" aria-controls="titleOne">Titulo 1</a>
+
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#titleTwo" aria-expanded="false" aria-controls="titleTwo">Titulo 2</button>
+
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#titleThree" aria-expanded="false" aria-controls="titleThree">Titulo 3</button>   
+        </p>
         <div class="row">
-            <div class="col bg-primary text-white">
-                <p>
-                    <h2>titulo1</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi?</p>
-                </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="titleOne">
+                    <div class="col bg-primary text-white p-2">
+                        <p>
+                            <h2>titulo1</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, excepturi?</p>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col bg-success text-white">
-                <p>
-                    <h2>titulo2</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, optio iste! Sapiente.</p>
-                </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="titleTwo">
+                    <div class="col bg-success text-white p-2">
+                        <p>
+                            <h2>titulo2</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, optio iste! Sapiente.</p>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col bg-info text-white">
-                <p>
-                    <h2>titulo3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </p>
+            <div class="col">
+                <div class="collapse multi-collapse" id="titleThree">
+                    <div class="col bg-success text-white p-2">
+                        <p>
+                            <h2>titulo3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-3 mt-5 mb-5 text-center t-w">
             <div class="col mb-4">
                 <div class="card">
                     <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-binoculars-fill"></i> Boton1</a>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-binoculars-fill"></i> Boton1</button>
                     </div>
                 </div>
             </div>
@@ -66,9 +85,9 @@
                 <div class="card">
                     <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-twitch"></i> Boton1</a>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-twitch"></i> Boton1</button>
                     </div>
                 </div>
             </div>
@@ -76,20 +95,9 @@
                 <div class="card">
                     <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-bookmarks-fill"></i> Boton1</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-box"></i> Boton1</a>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-bookmarks-fill"></i> Boton1</button>
                     </div>
                 </div>
             </div>
@@ -98,9 +106,9 @@
                 <div class="card">
                     <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-bricks"></i> Boton1</a>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-box"></i> Boton1</button>
                     </div>
                 </div>
             </div>
@@ -109,11 +117,58 @@
                 <div class="card">
                     <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                        <a href="#" class="btn btn-block bg-primary"><i class="bi bi-bug"></i> Boton1</a>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-bricks"></i> Boton1</button>
                     </div>
                 </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="img/Tulips.jpg" alt="Tulipanes" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
+                        <button href="#" class="btn btn-block bg-primary"><i class="bi bi-bug"></i> Boton1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Title">Titulo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
+                <button type="button" class="btn btn-outline-secondary mb-4" data-toggle="modal" data-target="#exampleModal">
+                    Contact
+                </button>
+                <button href="#" class="btn btn-block bg-primary text-white"><i class="bi bi-bug"></i> Boton1</button>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hotel</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                      <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="text" class="form-control" id="email" placeholder="name@exmaple.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="mensaje">Example textarea</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -134,8 +189,14 @@
             </div>
         </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 </html>
