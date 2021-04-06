@@ -160,13 +160,13 @@
             <div class="card-body">
                 <h5 class="card-title" data-toggle="popover" data-placement="left" title="Title" data-content="Holi" data-trigger="hover">Titulo</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id magnam tempore repellendus modi consequatur ducimus, veniam quos? Consequatur, accusantium!</p>
-                <button type="button" class="btn btn-outline-secondary mb-4" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-outline-secondary mb-4" data-toggle="modal" data-target="#modalContact" id="modalcontacto">
                     Contact
                 </button>
                 <button href="#" class="btn btn-block bg-primary text-white"><i class="bi bi-bug"></i> Boton1</button>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -188,7 +188,7 @@
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
                 </div>
               </div>
             </div>
@@ -220,6 +220,17 @@
             $('[data-toggle="popover"]').popover()
             $('.carousel').carousel({
                 interval: 1500
+            })
+
+            $('#modalContact').on('show.bs.modal', function(e){
+                $('#modalcontacto').prop("disabled", true)
+                $('#modalcontacto').removeClass('btn-outline-secondary')
+                $('#modalcontacto').addClass('btn-outline-warning')
+            })
+            $('#modalContact').on('hide.bs.modal', function(e){
+                $('#modalcontacto').prop("disabled", false)
+                $('#modalcontacto').removeClass('btn-outline-warning')
+                $('#modalcontacto').addClass('btn-outline-secondary')
             })
         })
     </script>
