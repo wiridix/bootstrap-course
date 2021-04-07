@@ -1,10 +1,14 @@
 $colorAzul: #54d6b6;
-$colorblack: black;
+$colorWhite: #fff;
+
+@mixin enlances($txtdecora,$color,$align) {
+    text-decoration: $txtdecora;
+    color: $color;
+    align-self: $align;
+}
 
 footer .container div> a,a:hover, a:visited{
-    text-decoration: none;
-    color:white;
-    align-self: center;
+    @include enlances(none,$colorWhite ,center);
 }
 
 .titulo{
@@ -13,5 +17,5 @@ footer .container div> a,a:hover, a:visited{
 }
 
 .t-w .card > .card-body > .btn{
-    color: white;
+    color: $colorWhite;
 }
