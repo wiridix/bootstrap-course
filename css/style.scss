@@ -1,0 +1,17 @@
+$colorAzul: #54d6b6;
+$colorblack: black;
+
+footer .container div> a,a:hover, a:visited{
+    text-decoration: none;
+    color:white;
+    align-self: center;
+}
+
+.titulo{
+    margin-top: 40px;
+    background: $colorAzul;
+}
+
+.t-w .card > .card-body > .btn{
+    color: white;
+}
