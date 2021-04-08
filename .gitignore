@@ -1,7 +1,3 @@
 #excluir carpetas
 node_modules
 img
-sass
-#excluir tipo de archivos
-*.scss
-*.less
