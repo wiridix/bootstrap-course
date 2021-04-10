@@ -1,14 +1,11 @@
 footer .container div > a, a:hover, a:visited {
   text-decoration: none;
   color: #fff;
-  align-self: center;
-}
+  align-self: center; }
 
 .titulo {
   margin-top: 40px;
-  background: #54d6b6;
-}
+  background: #54d6b6; }
 
 .t-w .card > .card-body > .btn {
-  color: #fff;
-}
+  color: #fff; }

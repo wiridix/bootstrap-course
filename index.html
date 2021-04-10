@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- build:css css/app.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
     <title>Pag</title>
 </head>
 <body>
@@ -211,30 +214,11 @@
             </div>
         </div>
     </footer>
+    <!-- build:js js/app.js -->
     <script src="node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-            $('[data-toggle="popover"]').popover()
-            $('.carousel').carousel({
-                interval: 1500
-            })
-            var colorReal = $('#modalcontacto').attr('class').split(' ')
-            var colorCambio = 'btn-outline-warning'
-
-            $('#modalContact').on('show.bs.modal', function(e){
-                $('#modalcontacto').prop("disabled", true)
-                $('#modalcontacto').removeClass(colorReal[1])
-                $('#modalcontacto').addClass(colorCambio)
-            })
-            $('#modalContact').on('hide.bs.modal', function(e){
-                $('#modalcontacto').prop("disabled", false)
-                $('#modalcontacto').removeClass(colorCambio)
-                $('#modalcontacto').addClass(colorReal[1])
-            })
-        })
-    </script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
